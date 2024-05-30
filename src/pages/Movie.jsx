@@ -12,7 +12,6 @@ export async function getMovie(id) {
 
 export function Component() {
   const data = useLoaderData();
-  console.log(data);
 
   return (
     <div className="container">
@@ -24,7 +23,6 @@ export function Component() {
             alt=""
             className="w-80 shadow-lg rounded-lg"
           />
-          <p>{data.overview}</p>
         </div>
 
         <div>

@@ -20,6 +20,7 @@ export default function Favoriti() {
         {favoriti.map((movie) => (
           <li key={movie.id}>
             <h3>{movie.title}</h3>
+            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" className="w-80 shadow-lg rounded-lg"/>
           </li>
         ))}
       </ul>
